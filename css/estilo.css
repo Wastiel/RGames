@@ -1,0 +1,42 @@
+/* Cores do sistema: troque aqui e o visual muda todo */
+:root {
+    --rg-roxo: #5B2A86;
+    --rg-roxo-escuro: #43206a;
+    --rg-destaque: #FF9F1C;
+}
+
+body { background-color: #f4f2f8; }
+
+.navbar-rgames { background-color: var(--rg-roxo); }
+
+.btn-rgames {
+    background-color: var(--rg-roxo);
+    border-color: var(--rg-roxo);
+    color: #fff;
+}
+.btn-rgames:hover { background-color: var(--rg-roxo-escuro); color: #fff; }
+
+.btn-rgames-warning {
+    background-color: var(--rg-destaque);
+    border-color: var(--rg-destaque);
+    color: #212529;
+}
+.btn-rgames-warning:hover { filter: brightness(0.92); }
+
+.titulo-pagina { color: var(--rg-roxo); font-weight: 600; }
+
+/* Selos (badges) */
+.badge-ativo     { background-color: #198754; }
+.badge-inativo   { background-color: #dc3545; }
+.badge-completo  { background-color: var(--rg-roxo); }
+.badge-andamento { background-color: #6c757d; }
+
+/* Cards do painel */
+.dashboard-card { border: 0; border-left: 5px solid var(--rg-roxo); transition: transform .15s; }
+.dashboard-card:hover { transform: translateY(-3px); }
+.dashboard-card .numero { font-size: 1.8rem; font-weight: 700; color: var(--rg-roxo); }
+
+/* Login */
+.login-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.login-card { width: 100%; max-width: 380px; }
+.estrelas { color: var(--rg-destaque); white-space: nowrap; }
